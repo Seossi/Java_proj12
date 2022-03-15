@@ -1,0 +1,16 @@
+package chap06_07.Ex5;
+
+import chap06_07.Ex5.Bb;			// 클래스 B는 클래스 접근자가 default 이기 때문에 다른 패키지에서 접근 불가.
+
+
+public class ExternalClass_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Bb bb = new Bb();
+		
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package Chap10.Ex04;
+
+
+//메소드 오버라이딩 (MethodOverriding ) :
+
+// 1. 반드시 상속 관계에서만 메소드 오버라이딩이 구현된다.
+// 2. 부모 클래스에서 선언된 메소드를 새롭게 정의해서 사용하는것.
+
+class A {
+	void print() {
+		System.out.println( " A 클래스");
+	}
+}
+
+class B extends A {
+	void print() {
+		System.out.println("B 클래스");
+	}
+}
+
+
+public class MethodOverriding {
+
+	public static void main(String[] args) {
+		// 1. A타입
+		A aa - new A();
+		aa.print();		//A클래스의 print 출력
+		
+		//2.B 타입
+		B bb =new B();
+		bb.print();		//B 클래스의  print출력
+		
+		// 3. A 타입 
+		
+		
+		
+		
+		
+
+	}
+
+}

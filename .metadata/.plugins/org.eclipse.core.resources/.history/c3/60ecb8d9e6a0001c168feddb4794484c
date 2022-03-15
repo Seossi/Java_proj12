@@ -1,0 +1,10 @@
+package Chap10.Ex02;
+
+public class Inheritanc_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

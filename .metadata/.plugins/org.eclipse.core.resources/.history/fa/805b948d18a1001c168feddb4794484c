@@ -1,0 +1,31 @@
+package Home;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		boolean run = true;
+		int nu = 0 ; 	//스캐너로 번호를 인풋 받는 변수
+		
+		
+		
+		
+		do {
+			System.out.println("================================");
+			System.out.println(" 1. 19단 출력 | 2. 홀수단만 출력 | 3. 3의 배수단만 출력");
+			System.out.println("================================");
+			
+			if (nu == 1 ) {	// 이중 for 문을 사용해서 if 블럭안에 19단 출력
+				
+			
+			}
+			
+			
+		}while (run);
+		
+		
+		
+	}
+
+}

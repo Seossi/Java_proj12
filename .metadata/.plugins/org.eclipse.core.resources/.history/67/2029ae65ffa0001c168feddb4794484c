@@ -1,0 +1,10 @@
+package Chap10.Ex04;
+
+public class MethodOverrideing_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

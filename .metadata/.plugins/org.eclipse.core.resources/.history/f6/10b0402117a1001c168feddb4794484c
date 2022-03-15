@@ -1,0 +1,43 @@
+package Chap10.Ex04;
+
+// 메소드 오버로딩 vs 메소드 오버라이딩
+	//1. 메소드 오버로딩 : 동일한 메소드 이름으로 (매개변수 , 매개변수 수) 에따라 해달 메소드가 호출
+	//	-- 상속과는 관련이 없다. 생성자에서 많이 사용
+
+	//	2. 메소드 오버라이딩 : 반드시 상속관계에서 사용
+	// 부모의 메소드를 차일드에서 새롭게 정의해서 사용
+	
+
+class Ab {
+	void print1() {		//오버 라이딩
+		System.out.println( " Ab 클래스의 print1()");
+	}
+	void print2() {		// 오버로딩
+		System.out.println("Ab 클래스의 print2()");
+	}
+	
+}
+class Bc extends Ab {
+	@Override
+	void print1() {
+		System.out.println(" Bc 클래스의 print1");
+		
+	}
+	void print2 (int a) {		//  오버로딩
+		System.out.println("Bc 클래스의 print2");
+	}
+}
+
+
+public class OverLoading_Vs_Overriding {
+
+	public static void main(String[] args) {
+		// 1. A 타입선언
+
+		Ab aa = new Bc();
+		aa.print1();
+		aa.print2();
+		
+	}
+
+}

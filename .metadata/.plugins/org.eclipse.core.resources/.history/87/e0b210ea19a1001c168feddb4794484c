@@ -1,0 +1,51 @@
+package Home;
+
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		boolean run = true;
+		int nu = num ; 	//스캐너로 번호를 인풋 받는 변수
+		
+		
+		
+		
+		do {
+			
+			System.out.println("=========================================");
+			System.out.println(" 1. 19단 출력 | 2. 홀수단만 출력 | 3. 3의 배수단만 출력 | 4.종료" );
+			System.out.println("========================================");
+			System.out.println("번호를 입력해주세요");
+			
+			
+			if (nu == 1 ) {	// 이중 for 문을 사용해서 if 블럭안에 19단 출력
+				for ( int i = 1 ; i < 10 ; i++) {
+					for ( int j = 19 ; j<20 ;  j++  ) {
+						System.out.println(i+j); 
+					}
+				}
+				
+			}  else if ( nu == 2 ) {		// 홀수단만 출력
+				
+			}	else if ( nu == 3) { 		//3의 배수단만 출력
+			
+			} else if ( nu == 4 ) {	break; }		// 프로그램 종료 
+				
+			
+			
+		}while (run);
+		
+		//스캐너를 메모리에서 삭제후 종료
+		
+		System.out.println("프로그램을 종료합니다.");
+		
+	}
+	
+}

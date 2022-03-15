@@ -1,0 +1,36 @@
+package chap06_07.Ex6;
+
+
+// 정적 초기화 블럭
+
+class E {
+	
+	int a;
+	static int b;			// 객체 생성 없이도 호출가능
+	
+	static {  			// 정적 (static) 초기화 블럭 : 객체 생성 없이 클래스 명으로 호출할때 초기화
+		b = 5;
+		System.out.println( "클래스 E 가 로딩 되었습니다. 변수 b : " + b );
+	}
+	
+	
+	E() {			// 생성자 : 객체화 할때 필드의 값을 초기화
+		a = 3;
+	}
+	
+	
+}
+
+
+public class Static_3 {
+
+	public static void main(String[] args) {
+
+
+		System.out.println(E.b);		// 객체 생성없이 E.b 
+		
+		
+
+	}
+
+}
